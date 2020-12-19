@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0%
+    font-family: sans-serif;
+}
+
+.contain{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(60deg,#22046b,pink);
+    color: #fff;
+    position: relative;
+}
+.navbar{
+    width: 90;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items:center;
+}
+
+.logo{
+    width: 20px;
+    cursor: pointer;
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 70px;
+}
+
+.nav{
+   flex:1;
+   text-align: right;
+}
+
+.nav ul li{
+   list-style: none;
+   display: inline block;
+   margin-left: 60px;
+ }
+ 
+ .nav ul a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 14px;
+    padding: 5px 2px;
+  }
+
+  .nav ul a:hover{
+      color:rgb(216, 157, 46)17, 99, 64);
+  }
+
+  .row{
+      width: 80%;
+      min-height: 85vh;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .col{
+      margin: 20px 0;
+      flex-basis: 50%;
+      min-width: 300px;
+      height: 100%;
+      position: relative;
+  }
+
+  .text-box{
+     
+      margin-top: 50px;
+     
+  }
+
+
+  .text-box h5{
+      color: mediumseagreen;
+      padding-top: 10px;
+      font-size: 30px;
+      line-height: 65px;
+  }
+
+  .text-box h1{
+      font-size: 50px;
+      height: 100px;
+      line-height: 65px;
+  }
+
+  .gallerybox{
+      max-width:400px;
+      position: relative;
+      margin: auto;
+   
+  }
+
+  .gallerybox img{
+      width: 100%;
+      border: 10px solid peachpuff;
+      position: center;
+      box-sizing: border-box;
+      margin-top: 5%;
+      max-height: 80%;
+  }
+
+  .gallerybox ul{
+      position: absolute;
+      top: 50%;
+      right:-100%;
+      transform: translateY(-50%);
+  }
+
+  .gallerybox ul li{
+      list-style:none;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 0 30px;
+      position: relative;
+      cursor: pointer;
+  }
+
+  .gallerybox .active{
+      color: mediumslateblue;
+      
+
+  }
+
+  .gallerybox ul li::after{
+     content: '';
+     width: 30px;
+     height: 2px;
+     background:red; 
+     position: absolute;
+     top: 8px;
+     left: -5px;
+     
+  }
+
+  .gallerybox.active::after{
+      background: mediumslateblue; ;
+  }
